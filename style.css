@@ -1,0 +1,36 @@
+style.css
+body{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+img{
+    margin: 5px;
+    border: solid;
+    border-color:#ffff98;
+}
+.grid-container{
+    display: grid;
+    background-color:#e5ffe5;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 150px 1fr 1fr;
+    grid-template-areas:
+     ". header ."
+     ". main ."
+     ". main .";
+
+}
+.grid-item{
+    text-align: center;
+    padding: 15px;
+    grid-area: main;
+    justify-self: center;
+}
+.h1{
+    grid-area: header;
+    color:#9898ff;
+    text-align: center;
+}
+.h3{
+    text-align: center;
+    grid-area: main;
+}
